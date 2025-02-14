@@ -1,0 +1,74 @@
+.common-layout{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.el-header{
+    background-color: #67c23a;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    --el-header-padding: 0,0 px;
+
+    --wails-draggable:drag;/*设置可拖拽*/
+}
+.el-header .itemIcon{
+    width: 100px;
+    height: 100vh;
+    background-color: #a22492;
+}
+.el-header .itemControl{
+    width: 948px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end; /* 内容靠右对齐 */
+    align-items: center; /* 垂直居中 */
+}
+/*控制按钮的样式*/
+.el-header .itemControl >*{
+    margin-right: 10px;
+}
+.el-aside{
+    display: flex; /* 启用 Flex 布局 */
+    flex-direction: column; /* 子元素垂直排列 */
+    justify-content: flex-start; /* 从顶部开始排列 */
+    align-items: stretch; /* 子元素宽度拉伸以填满父容器 */
+
+    width: 100px;
+    background-color: #1cbd9c;
+    height: 100%
+}
+.el-aside .item{
+    padding: 10px;
+    border-bottom: 2px solid #444;
+    cursor: pointer;
+}
+.el-aside .item:hover{
+    color: #ffdd57;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* 添加阴影 */
+    border-left: 4px solid #ffdd57; /* 添加边框 */
+    background-color: #0fd946;
+}
+.el-main{
+    background-color: #909399
+}
+
+
+::v-deep(.el-icon) {
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+    color: #606266;
+}
+
+::v-deep(.el-icon:hover) {
+    color: #c7155a;
+    transform: scale(1.1);
+}
+
+/*去掉router-link的下划线*/
+a{
+    text-decoration: none;
+}
+.router-link-active {
+    text-decoration: none;
+}
