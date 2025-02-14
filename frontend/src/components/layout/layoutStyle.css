@@ -47,7 +47,7 @@
     color: #ffdd57;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* 添加阴影 */
     border-left: 4px solid #ffdd57; /* 添加边框 */
-    background-color: #0fd946;
+    background-color: #9a4d24;
 }
 .el-main{
     background-color: #909399
@@ -61,7 +61,7 @@
 }
 
 ::v-deep(.el-icon:hover) {
-    color: #c7155a;
+    color: #501129;
     transform: scale(1.1);
 }
 

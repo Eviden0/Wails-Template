@@ -2,7 +2,7 @@
 import CloseIcon from "@/assets/icons/Close.vue";
 import FullScreen from "@/assets/icons/FullScreen.vue";
 import MineScreen from "@/assets/icons/MineScreen.vue";
-import {WindowMinimise, WindowReload, WindowToggleMaximise} from "../../../wailsjs/runtime";
+import {Quit, WindowMinimise, WindowToggleMaximise} from "../../../wailsjs/runtime";
 import avatar from "@/assets/images/avator.jpg"
 </script>
 
@@ -14,7 +14,7 @@ import avatar from "@/assets/images/avator.jpg"
     <div class="itemControl">
       <div><el-icon :size="30" @click="WindowMinimise"><MineScreen /></el-icon></div>
       <div><el-icon :size="30" @click="WindowToggleMaximise"><FullScreen /></el-icon></div>
-      <div><el-icon :size="30" @click="WindowReload()"><CloseIcon /></el-icon></div>
+      <div><el-icon :size="30" @click="Quit"><CloseIcon /></el-icon></div>
     </div>
 </template>
 

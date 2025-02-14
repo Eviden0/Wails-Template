@@ -2,7 +2,9 @@ package main
 
 import (
 	"context"
-	"fmt"
+	"io"
+	"log"
+	"net/http"
 )
 
 // App struct
@@ -21,7 +23,12 @@ func (a *App) startup(ctx context.Context) {
 	a.ctx = ctx
 }
 
-// Greet returns a greeting for the given name
-func (a *App) Greet(name string) string {
-	return fmt.Sprintf("Hello %s, It's show time!", name)
+func (a *App) GetLongMessage() string {
+	resp, err := http.Get("https://www.baidu.com/")
+	if err != nil {
+		log.Println(err.Error())
+	}
+	defer resp.Body.Close()
+	str, _ := io.ReadAll(resp.Body)
+	return string(str)
 }
