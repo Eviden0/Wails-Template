@@ -4,12 +4,11 @@
     flex-direction: column;
 }
 .el-header{
-    background-color: #67c23a;
+    background-color: #385928;
     height: 40px;
     display: flex;
     justify-content: space-between;
     --el-header-padding: 0,0 px;
-
     --wails-draggable:drag;/*设置可拖拽*/
 }
 .el-header .itemIcon{

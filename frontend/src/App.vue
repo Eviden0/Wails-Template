@@ -3,7 +3,12 @@ import Base from "./base.vue"
 </script>
 
 <template>
-  <Base></Base>
+  <Base
+
+  >
+
+
+  </Base>
 
 </template>
 

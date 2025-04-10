@@ -27,9 +27,9 @@ const fetchMessage = async () => {
   <h1>{{counter}}</h1>
 <el-button @click="increment">点击</el-button>
   <el-button @click="fetchMessage">点击拿信息</el-button>
-  <h1>{{message}}</h1>
+  <h1 style="color: var(--el-color-primary);">{{message}}</h1>
+
 </template>
 
 <style scoped>
-
 </style>

@@ -1,9 +1,13 @@
 <script setup lang="ts">
+
+import AboutAuthor from "@/components/layout/about-author.vue";
+
 const menuItems = [
   { name: "项目1", path: "/page1" },
   { name: "项目2", path: "/page2" },
   { name: "项目3", path: "/page3" },
 ];
+import record from "@/assets/icons/record.vue"
 </script>
 
 <template>
@@ -20,10 +24,14 @@ const menuItems = [
     >
       {{ item.name }}
     </router-link>
+
   </div>
+
 </template>
 
 <style scoped>
+
+
 @import './layoutStyle.css';
 .item{
   color: #13b3d3; /* 字体颜色 */
@@ -48,4 +56,6 @@ const menuItems = [
   background-color: #0a5a5a;
   color: #ffffff;
 }
+
+
 </style>
