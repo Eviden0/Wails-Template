@@ -8,4 +8,4 @@
 4. 后续增加托盘和多页面~
 
 效果图:
-![img.png](img.png)![](https://gitee.com/eviden/img/raw/master/202502142344932.png)
+![img.png](img.png)
